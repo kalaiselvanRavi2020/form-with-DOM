@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div class="col sm12 col md12 col lg 3">
+            <form action =" " class="mt 3 mb 5 offset-3 ">
+                <h1>Form Submission </h1>
+                <label for="fname">First Name :</label>
+                <input type="text" id="fname" name="fname" class="form-control  " placeholder="FirstName" style="width: 50%;"><br>
+            
+                <label for="lname">Last Name :</label>
+                <input type="text" id="lname" name="lname" class="form-control" placeholder="LastName"style="width: 50%;"><br>
+
+
+                <label for="address1">Address line1 :</label>
+                <input type="text" id="address1" name="address1" class="form-control" placeholder="Address line1"style="width: 50%;"><br>
+
+
+                <label for="address2">Address line2 :</label>
+                <input type="text" id="address2" name="address2" class="form-control"style="width: 50%;" placeholder="Address line2"><br>
+
+                
+                <label for="pin">PIN :</label>
+                <input type="number" id="pin" name="pin" class="form-control" placeholder="PIN"style="width: 50%;"><br>
+            
+                <label for="gender ">Gender :</label><br>
+                    <input type="radio" id="Male" name="gender" class="gender m-2 mb-2" value="Male">Male
+                    <input type="radio" id="Female" name="gender" class="gender m-2 mb-2" value="Female">Female<br>
+               
+                <label for="food">Choice of Food :</label><br>
+                    <input type="checkbox" id="food" name="food" class="food m-2"  value="Indian">Indian
+                    <input type="checkbox" id="food1" name="food" class="food m-2 "  value="Chinese">Chinese
+                    <input type="checkbox" id="food2" name="food" class="food m-2"  value="Continental" >Continental
+                    <input type="checkbox" id="food3" name="food" class="food m-2 " value="Mexican">Mexican
+                    <input type="checkbox" id="food4" name="food" class="food m-2 " value="Thai">Thai<br><br>
+
+                    <label for="state">State :</label>
+                    <input type="text" id="state" name="state" class="form-control " placeholder="state" style="width: 50%;"><br>
+                
+                    <label for="Country">Country :</label>
+                    <input type="text" id="Country" name="Country" class="form-control" placeholder="Country" style="width: 50%;"><br>
+    
+                <button type="submit" id="submit" class=" btn btn-primary">Submit</button>
+
+            </form>
+        </div>
+    </div>
+    <div class="col col-md-12 col-sm-12 col-lg-8">
+        <h1>Submission List</h1>
+        <table class="container table table-striped">
+            <thead  class="bg-dark text-light">
+                <tr>
+                <td>FirstName</td>
+                <td>LastName</td>
+                <td>Address</td>
+                <td>Pin</td>
+                <td>gender</td>
+                <td>food</td>
+                <td>state</td>
+                <td>country</td>
+                    </tr>
+            </thead>
+            <tbody id="tbody" class="tbody">
+        
+                
+            </tbody>
+        </table>
+    </div>
+<script src="script.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+</body>
+</html>
